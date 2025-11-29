@@ -13,13 +13,13 @@ importers:
         version: 5.22.0(prisma@5.22.0)
       next:
         specifier: 15.5.6
-        version: 15.5.6(react-dom@19.3.0-canary-fb2177c1-20251114(react@19.3.0-canary-fb2177c1-20251114))(react@19.3.0-canary-fb2177c1-20251114)
+        version: 15.5.6(react-dom@19.3.0-canary-fd524fe0-20251121(react@19.3.0-canary-fd524fe0-20251121))(react@19.3.0-canary-fd524fe0-20251121)
       react:
-        specifier: 19.3.0-canary-fb2177c1-20251114
-        version: 19.3.0-canary-fb2177c1-20251114
+        specifier: 19.3.0-canary-fd524fe0-20251121
+        version: 19.3.0-canary-fd524fe0-20251121
       react-dom:
-        specifier: 19.3.0-canary-fb2177c1-20251114
-        version: 19.3.0-canary-fb2177c1-20251114(react@19.3.0-canary-fb2177c1-20251114)
+        specifier: 19.3.0-canary-fd524fe0-20251121
+        version: 19.3.0-canary-fd524fe0-20251121(react@19.3.0-canary-fd524fe0-20251121)
       server-only:
         specifier: ^0.0.1
         version: 0.0.1
@@ -328,17 +328,17 @@ packages:
     engines: {node: '>=16.13'}
     hasBin: true
 
-  react-dom@19.3.0-canary-fb2177c1-20251114:
-    resolution: {integrity: sha512-dN0859tXfHNX1luA/vJ+0u8tIYzpvV/wc5Ak4j0VRPOUHR/IekO2dhBhJ2p+i/vPrJ0tCHW6MXH6eVgBqEnfwg==}
+  react-dom@19.3.0-canary-fd524fe0-20251121:
+    resolution: {integrity: sha512-+M3m+8ysDcPmt7ncitPOX5O71OOKF6lq6INFZFUMJjEGDxvl4CS2D41DJG5MnXcwiWTZLAp/uILZtt4sKTRSyQ==}
     peerDependencies:
-      react: 19.3.0-canary-fb2177c1-20251114
+      react: 19.3.0-canary-fd524fe0-20251121
 
-  react@19.3.0-canary-fb2177c1-20251114:
-    resolution: {integrity: sha512-f78+dzAbULGnu2JWb6WuRxCxF70LAfNP/oHaF/jG9TQJ4k85W67pS9ItKBcnnPQ4G+euzJ64F9xUIQhkasOKUA==}
+  react@19.3.0-canary-fd524fe0-20251121:
+    resolution: {integrity: sha512-T36dcD3rbOLZsmTmYBl4Cjp02s/qsFo1y1tIAhiqU02ztPhsEp+8V+xgW3ML7L6bSwwCwDLTgDRbXIN66P/jGQ==}
     engines: {node: '>=0.10.0'}
 
-  scheduler@0.28.0-canary-fb2177c1-20251114:
-    resolution: {integrity: sha512-ya7AZh/U0/NBxlPr8+PJAI2W3vb057qQ/Cah6YIbWDUkAPf4Ip/659SrazjuaStjyARPm7TAKW6m84GoagsF1A==}
+  scheduler@0.28.0-canary-fd524fe0-20251121:
+    resolution: {integrity: sha512-8KVr3jEIUZXbf6XFkluou7z6/Gwwxr8ULAGB3O4V4kdNIGs+auA3/dBUD8BCkloPgqfpiDnQrhaXF/FBHWxG4A==}
 
   semver@7.7.3:
     resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
@@ -568,15 +568,15 @@ snapshots:
 
   nanoid@3.3.7: {}
 
-  next@15.5.6(react-dom@19.3.0-canary-fb2177c1-20251114(react@19.3.0-canary-fb2177c1-20251114))(react@19.3.0-canary-fb2177c1-20251114):
+  next@15.5.6(react-dom@19.3.0-canary-fd524fe0-20251121(react@19.3.0-canary-fd524fe0-20251121))(react@19.3.0-canary-fd524fe0-20251121):
     dependencies:
       '@next/env': 15.5.6
       '@swc/helpers': 0.5.15
       caniuse-lite: 1.0.30001680
       postcss: 8.4.31
-      react: 19.3.0-canary-fb2177c1-20251114
-      react-dom: 19.3.0-canary-fb2177c1-20251114(react@19.3.0-canary-fb2177c1-20251114)
-      styled-jsx: 5.1.6(react@19.3.0-canary-fb2177c1-20251114)
+      react: 19.3.0-canary-fd524fe0-20251121
+      react-dom: 19.3.0-canary-fd524fe0-20251121(react@19.3.0-canary-fd524fe0-20251121)
+      styled-jsx: 5.1.6(react@19.3.0-canary-fd524fe0-20251121)
     optionalDependencies:
       '@next/swc-darwin-arm64': 15.5.6
       '@next/swc-darwin-x64': 15.5.6
@@ -605,14 +605,14 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  react-dom@19.3.0-canary-fb2177c1-20251114(react@19.3.0-canary-fb2177c1-20251114):
+  react-dom@19.3.0-canary-fd524fe0-20251121(react@19.3.0-canary-fd524fe0-20251121):
     dependencies:
-      react: 19.3.0-canary-fb2177c1-20251114
-      scheduler: 0.28.0-canary-fb2177c1-20251114
+      react: 19.3.0-canary-fd524fe0-20251121
+      scheduler: 0.28.0-canary-fd524fe0-20251121
 
-  react@19.3.0-canary-fb2177c1-20251114: {}
+  react@19.3.0-canary-fd524fe0-20251121: {}
 
-  scheduler@0.28.0-canary-fb2177c1-20251114: {}
+  scheduler@0.28.0-canary-fd524fe0-20251121: {}
 
   semver@7.7.3:
     optional: true
@@ -653,10 +653,10 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
-  styled-jsx@5.1.6(react@19.3.0-canary-fb2177c1-20251114):
+  styled-jsx@5.1.6(react@19.3.0-canary-fd524fe0-20251121):
     dependencies:
       client-only: 0.0.1
-      react: 19.3.0-canary-fb2177c1-20251114
+      react: 19.3.0-canary-fd524fe0-20251121
 
   tslib@2.8.1: {}
 
