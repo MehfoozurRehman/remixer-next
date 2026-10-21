@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# remixer-next
 
-## Getting Started
+A Next.js todo list backed by MongoDB through Prisma, built to test Prisma with server actions.
 
-First, run the development server:
+**Status:** Prototype. It tests one idea, Prisma against MongoDB behind Next.js server actions, with one model and one page.
+
+## The problem
+
+The code is a todo list. It stores a todo with a title, optional content and a completed flag, and it shows the list on one page.
+
+## What it does
+
+- Lists all todos on the home page, using a query in `api/queries.ts`.
+- Creates a todo from a title and content form, using `next/form` and the `createTodo` server action.
+- Changes a todo's completed status with `updateTodoStatus`, called from `app/Todo.tsx`.
+- Deletes a todo with `deleteTodo` in `api/actions.ts`.
+
+## How it's built
+
+- Next.js 15 with React 19 (a canary build), TypeScript and Prisma 5 with the MongoDB provider.
+- Data access is split between `api/queries.ts` (reads) and `api/actions.ts` (writes), and the page calls both from server components.
+- The database URL is read from the `DATABASE_URL` environment variable in `prisma/schema.prisma`.
+
+## Running it locally
+
+Set `DATABASE_URL` to a MongoDB connection string, then:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
+pnpm generate
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`pnpm generate` runs `prisma generate`. `pnpm dev` runs `next dev --turbopack`. `pnpm studio` opens Prisma Studio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What's left
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- React is pinned to a 19.3 canary build, so the app depends on an unreleased version.
+- `@types/react` is version 18 while React is version 19, which is a mismatch.
+- Input is not validated. The title field accepts an empty string.
+- Server actions have no error handling.
+- There are no tests.
